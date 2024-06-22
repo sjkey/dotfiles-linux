@@ -1,0 +1,12 @@
+format = """
+$directory\
+$git_branch\
+"""
+
+[directory]
+style = "fg:#DA627D"
+format = "[ $path ]($style)"
+
+[git_branch]
+style = "fg:#00CCC9"
+format = '[\($branch\) ]($style)'

@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+# Update and upgrade
 sudo apt update && sudo apt upgrade -y
 
 # Remove unwanted pre-installed applications
@@ -10,7 +11,7 @@ sudo snap remove snap-store
 sudo apt autoremove -y
 
 # Install essential tools
-sudo apt install -y curl git dconf-cli
+sudo apt install -y curl git dconf-cli xclip
 
 # Tools to consider installing later:
 # tmux
@@ -28,20 +29,24 @@ npm -v
 
 # pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
-source ~/.bashrc
-pnpm -v
 
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config
 cp config/starship.toml ~/.config/starship.toml
-
-# Terminal
-dconf load /org/gnome/terminal/ < config/terminal.dconf
+# TODO: add required stuff to bashrc
 
 # VS Code
 chmod +x scripts/vscode.sh
 ./scripts/vscode.sh
+
+# Nerd Fonts
+mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts
+curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf
+fc-cache -fv
+
+# Terminal
+dconf load /org/gnome/terminal/ < config/terminal.dconf
 
 # i3
 sudo apt install -y feh i3
@@ -54,6 +59,9 @@ sudo apt install -y feh i3
 
 # Polybar
 sudo apt install -y polybar xdotool
-cp polybar/config.ini /etc/polybar/config.ini
+# TODO: FIX needed
+sudo cp polybar/config.ini /etc/polybar/config.ini
 chmod +x polybar/launch.sh
-./polybar/launch.sh
+# ./polybar/launch.sh
+
+sudo reboot

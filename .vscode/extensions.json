@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    // Theme
+    "zhuangtongfa.material-theme",
+    "PKief.material-icon-theme",
+    "antfu.iconify",
+
+    // Git
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // Tools
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+
+
+    // Editor helpers
+    "YoavBls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "usernamehw.errorlens",
+    "sdras.vue-vscode-snippets",
+    "antfu.goto-alias",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "mrmlnc.vscode-duplicate",
+    "wix.vscode-import-cost",
+
+    // Other
+    "ms-azuretools.vscode-docker",
+    "csstools.postcss",
+    "Prisma.prisma",
+    "antfu.unocss",
+    "Vue.volar",
+  ]
+}

@@ -50,17 +50,16 @@ dconf load /org/gnome/terminal/ < ./config/terminal.dconf
 
 # i3
 sudo apt install -y feh i3
-# cp config/wallpaper.jpg ~/Pictures/wallpaper.jpg
+cp ./config/wallpaper.jpg ~/Pictures/wallpaper.jpg
 
-# copy i3 config when it's ready
-# for now let's use 
-# echo 'exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg' >> ~/.config/i3/config
-# i3-msg restart
+# copy i3 config when it's ready - for now let's use 
+echo 'exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg' >> ~/.config/i3/config
+i3-msg restart
 
 # Polybar
 sudo apt install -y polybar xdotool
 sudo cp ./polybar/config.ini /etc/polybar/config.ini
 chmod +x ./polybar/launch.sh
-# ./polybar/launch.sh
+./polybar/launch.sh
 
 sudo reboot

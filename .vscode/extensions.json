@@ -28,6 +28,7 @@
     "wix.vscode-import-cost",
 
     // Other
+    "vscodevim.vim",
     "ms-azuretools.vscode-docker",
     "csstools.postcss",
     "Prisma.prisma",

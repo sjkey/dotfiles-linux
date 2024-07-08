@@ -1,6 +1,7 @@
 [legacy]
 always-check-default-terminal=false
 headerbar=@mb false
+default-show-menubar=false
 new-terminal-mode='window'
 theme-variant='dark'
  

@@ -14,7 +14,6 @@ sudo apt autoremove -y
 sudo apt install -y curl git dconf-cli xclip
 
 # Tools to consider installing later:
-# tmux
 # gnome-tweaks
 # docker.io
 
@@ -34,7 +33,9 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config
 cp ./config/starship.toml ~/.config/starship.toml
-# TODO: add required stuff to bashrc
+
+# Append custom bash configuration
+cat ./config/.bashrc >> ~/.bashrc
 
 # VS Code
 chmod +x ./scripts/vscode.sh
@@ -50,11 +51,7 @@ dconf load /org/gnome/terminal/ < ./config/terminal.dconf
 
 # i3
 sudo apt install -y feh i3
-cp ./config/wallpaper.jpg ~/Pictures/wallpaper.jpg
-
-# copy i3 config when it's ready - for now let's use 
-echo 'exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg' >> ~/.config/i3/config
-i3-msg restart
+cp ./config/wallpaper.jpg ~/Pictures/i3/wallpaper.jpg
 
 # Polybar
 sudo apt install -y polybar xdotool

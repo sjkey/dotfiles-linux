@@ -11,7 +11,7 @@ sudo snap remove snap-store
 sudo apt autoremove -y
 
 # Install essential tools
-sudo apt install -y curl git dconf-cli xclip
+sudo apt install -y curl git dconf-cli xclip vim
 
 # Tools to consider installing later:
 # gnome-tweaks
@@ -30,7 +30,7 @@ npm -v
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # Starship
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- -y
 mkdir -p ~/.config
 cp ./config/starship.toml ~/.config/starship.toml
 
@@ -38,8 +38,9 @@ cp ./config/starship.toml ~/.config/starship.toml
 cat ./config/.bashrc >> ~/.bashrc
 
 # VS Code
-chmod +x ./scripts/vscode.sh
-./scripts/vscode.sh
+mkdir -p ~/.config/Code/User
+cp .vscode/settings.json ~/.config/Code/User/settings.json
+cp .vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
 # Nerd Fonts
 mkdir -p ~/.local/share/fonts
@@ -52,11 +53,12 @@ dconf load /org/gnome/terminal/ < ./config/terminal.dconf
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.jpg ~/Pictures/i3/wallpaper.jpg
+cp ./i3/config ~/.config/i3/config
 
 # Polybar
 sudo apt install -y polybar xdotool
-sudo cp ./polybar/config.ini /etc/polybar/config.ini
+cp ./polybar/config.ini /etc/polybar/config.ini
+cp ./polybar/config.ini /etc/polybar/launch.sh
 chmod +x ./polybar/launch.sh
-./polybar/launch.sh
 
 sudo reboot

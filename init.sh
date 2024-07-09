@@ -53,6 +53,7 @@ dconf load /org/gnome/terminal/ < ./config/terminal.dconf
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.jpg ~/Pictures/wallpaper.jpg
+mkdir -p ~/.config/i3/config
 cp ./i3/config ~/.config/i3/config
 
 # Polybar

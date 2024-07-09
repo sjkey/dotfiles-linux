@@ -6,11 +6,11 @@ new-terminal-mode='window'
 theme-variant='dark'
  
 [legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(13,17,23)'
+background-color='#1e1e2e'
 background-transparency-percent=15
 font='DejaVu Sans Mono 12'
-foreground-color='rgb(219,219,219)'
-palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+foreground-color='#cdd6f4'
+palette=['#181825', '#f38ba8', '#a6e3a1', '#f2cdcd', '#89b4fa', '#cba6f7', '#94e2d5', '#cdd6f4', '#313244', '#f38ba8', '#a6e3a1', '#f9e2af', '#89b4fa', '#cba6f7', '#89dceb', 'rgb(255,255,255)']
 scroll-on-keystroke=true
 scrollbar-policy='always'
 use-system-font=false

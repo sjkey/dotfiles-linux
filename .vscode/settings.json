@@ -1,6 +1,6 @@
 {
   // Workbench
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
   "workbench.fontAliasing": "antialiased",

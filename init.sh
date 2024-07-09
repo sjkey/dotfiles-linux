@@ -48,13 +48,14 @@ curl -fLo ~/.local/share/fonts/DejaVuSansMNerdFont-Regular.ttf https://github.co
 fc-cache -fv
 
 # Terminal
+sudo apt install -y picom
 dconf load /org/gnome/terminal/ < ./config/terminal.dconf
+mkdir -p ~/.config/picom
+cp ./config/picom.conf ~/.config/picom/picom.conf
 
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.jpg ~/Pictures/wallpaper.jpg
-# mkdir -p ~/.config/i3/config
-# cp ./i3/config ~/.config/i3/config
 
 # Polybar
 sudo apt install -y polybar xdotool

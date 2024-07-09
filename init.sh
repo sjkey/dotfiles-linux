@@ -59,7 +59,5 @@ cp ./i3/config ~/.config/i3/config
 # Polybar
 sudo apt install -y polybar xdotool
 sudo cp ./polybar/config.ini /etc/polybar/config.ini
-sudo cp ./polybar/config.ini /etc/polybar/launch.sh
-chmod +x ./polybar/launch.sh
 
 sudo reboot

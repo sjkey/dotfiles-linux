@@ -55,7 +55,7 @@ cp ./config/picom.conf ~/.config/picom/picom.conf
 
 # i3
 sudo apt install -y feh i3
-cp ./config/wallpaper.jpg ~/Pictures/wallpaper.jpg
+cp ./config/wallpaper.png ~/Pictures/wallpaper.png
 
 # Polybar
 sudo apt install -y polybar xdotool

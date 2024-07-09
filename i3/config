@@ -118,7 +118,7 @@ bindsym $mod+Ctrl+j resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+l resize grow width 1 px or 1 ppt
  
 # wallpaper
-exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
+exec_always feh --bg-scale ~/Pictures/wallpaper.png
 
 # Polybar
 exec_always --no-startup-id killall polybar

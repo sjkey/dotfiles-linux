@@ -59,6 +59,9 @@ dconf load /org/gnome/terminal/ < ./config/terminal.dconf
 mkdir -p ~/.config/picom
 cp ./config/picom.conf ~/.config/picom/picom.conf
 
+# Keyboard key remapping
+xmodmap ./config/.xmodmap
+
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.png ~/Pictures/wallpaper.png

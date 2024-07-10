@@ -66,7 +66,7 @@ bindsym $mod+t split toggle
 bindsym $mod+Return exec i3-sensible-terminal
  
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift+w kill
  
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -150,7 +150,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
  
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+space exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

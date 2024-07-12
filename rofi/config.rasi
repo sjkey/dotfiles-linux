@@ -3,10 +3,15 @@ configuration{
     display-drun: "Applications:";
     display-window: "Windows:";
     display-combi: "Run:";
+ 
     drun-display-format: "{icon} {name}";
     show-icons: true;
+ 
     icon-theme: "Papirus";
     font: "DejaVu Sans Mono Nerd Font Medium 11";
+ 
+    kb-row-down: "j";
+    kb-row-up: "k";
 }
  
 @theme "/dev/null"

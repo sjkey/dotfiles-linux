@@ -13,10 +13,6 @@ sudo apt autoremove -y
 # Install essential tools
 sudo apt install -y curl git dconf-cli xclip vim
 
-# Tools to consider installing later:
-# gnome-tweaks
-# docker.io
-
 # NVM and Node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 export NVM_DIR="$HOME/.nvm"

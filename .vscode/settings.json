@@ -87,7 +87,7 @@
     "vueuse"
   ],
   "cSpell.allowCompoundWords": true,
-  "cSpell.language": "en,en-US",
+  "cSpell.language": "en,en-US,pl",
 
   "search.exclude": {
     "**/.git": true,

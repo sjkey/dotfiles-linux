@@ -62,6 +62,11 @@ cp ./config/picom.conf ~/.config/picom/picom.conf
 # Keyboard key remapping
 xmodmap ./config/.xmodmap
 
+# Rofi
+sudo apt install -y rofi papirus-icon-theme
+cp ./rofi/config.rasi ~/.config/rofi/config.rasi
+
+
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.png ~/Pictures/wallpaper.png

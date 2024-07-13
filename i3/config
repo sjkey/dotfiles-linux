@@ -124,8 +124,7 @@ exec_always --no-startup-id sh -c "sleep 2 && xmodmap ~/.config/i3/.xmodmap"
 exec_always feh --bg-scale ~/Pictures/wallpaper.png
 
 # Polybar
-exec_always --no-startup-id killall polybar
-exec_always --no-startup-id polybar
+exec_always --no-startup-id sh -c "killall polybar; sleep 0.2; polybar main &"
 
 # Transparent terminal via picom
 exec --no-startup-id picom --config ~/.config/picom/picom.conf

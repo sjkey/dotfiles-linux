@@ -63,7 +63,6 @@ cp ./rofi/config.rasi ~/.config/rofi/config.rasi
 # i3
 sudo apt install -y feh i3
 cp ./config/wallpaper.png ~/Pictures/wallpaper.png
-cp ./config/.xmodmap ~/.config/i3/.xmodmap
 
 # Polybar
 sudo apt install -y polybar xdotool

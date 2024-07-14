@@ -67,4 +67,6 @@ cp ./config/wallpaper.png ~/Pictures/wallpaper.png
 sudo apt install -y polybar xdotool
 sudo cp ./polybar/config.ini /etc/polybar/config.ini
 
+chmod +x ./follow-up.sh
+
 sudo reboot

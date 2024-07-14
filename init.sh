@@ -47,7 +47,6 @@ sudo apt install -y brave-browser
 # Nerd Fonts
 mkdir -p ~/.local/share/fonts
 curl -fLo ~/.local/share/fonts/DejaVuSansMNerdFont-Regular.ttf https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf
-fc-cache -fv
 
 # Terminal
 sudo apt install -y picom

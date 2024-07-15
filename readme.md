@@ -42,5 +42,4 @@
 
 
 ### TODO
-- Add Docker to setup
 - Mic status / mute toggle in Polybar

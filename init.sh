@@ -28,11 +28,11 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 # Docker
 sudo apt install -y apt-transport-https ca-certificates software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt install docker-ce
+sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt install -y docker-ce
 wget https://desktop.docker.com/linux/main/amd64/157355/docker-desktop-amd64.deb
 sudo apt install -y ./docker-desktop-amd64.deb
+rm -f docker-desktop-amd64.deb
 
 # Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
@@ -43,6 +43,13 @@ cp ./config/starship.toml ~/.config/starship.toml
 cat ./config/.bashrc >> ~/.bashrc
 
 # Code
+# sudo apt-get install -y gpg
+# wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+# sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+# echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+# rm -f packages.microsoft.gpg
+# sudo apt update
+# sudo apt install -y code
 mkdir -p ~/.config/Code/User
 cp .vscode/settings.json ~/.config/Code/User/settings.json
 cp .vscode/keybindings.json ~/.config/Code/User/keybindings.json

@@ -30,9 +30,6 @@ sudo apt install -y apt-transport-https ca-certificates software-properties-comm
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 sudo apt install -y docker-ce
-wget https://desktop.docker.com/linux/main/amd64/157355/docker-desktop-amd64.deb
-sudo apt install -y ./docker-desktop-amd64.deb
-rm -f docker-desktop-amd64.deb
 
 # Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y

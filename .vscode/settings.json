@@ -74,12 +74,15 @@
   ],
 
   // code-spell-checker extension settings
-  "cSpell.userWords": [
+    "cSpell.userWords": [
     "antfu",
     "iconify",
+    "kinde",
     "nuxt",
+    "nuxtjs",
     "pinia",
     "primevue",
+    "shadcn",
     "sjkey",
     "tsup",
     "Unocss",

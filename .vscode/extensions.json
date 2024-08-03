@@ -17,7 +17,6 @@
     "dbaeumer.vscode-eslint",
     "GitHub.vscode-github-actions",
 
-
     // Editor helpers
     "YoavBls.pretty-ts-errors",
     "bradlc.vscode-tailwindcss",

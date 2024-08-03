@@ -74,19 +74,21 @@
   ],
 
   // code-spell-checker extension settings
-    "cSpell.userWords": [
+  "cSpell.userWords": [
     "antfu",
+    "Arcanify",
     "iconify",
-    "kinde",
+    "Kinde",
     "nuxt",
     "nuxtjs",
     "pinia",
     "primevue",
-    "shadcn",
+    "prio",
     "sjkey",
     "tsup",
     "Unocss",
     "unplugin",
+    "Vitesse",
     "vuepic",
     "vueuse"
   ],
@@ -128,5 +130,6 @@
   "breadcrumbs.showVariables": false,
   "breadcrumbs.symbolPath": "off",
 
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "github.copilot.editor.enableAutoCompletions": true
 }
